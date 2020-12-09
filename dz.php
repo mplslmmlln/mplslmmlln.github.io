@@ -44,7 +44,7 @@ function getPartsFromFullname($a) {
 }
 
 function getGenderFromName($b) {
-  
+
   $array = getPartsFromFullname($b);
   $i= 0;
   (mb_substr($array[2], -2, 2)) <=> 'ич' ? 0 : $i++;
@@ -66,3 +66,5 @@ function getGenderFromName($b) {
 // Проверка
 // $z = "Иванов Иван Иванович";
 // echo getGenderFromName($z);
+
+?>
